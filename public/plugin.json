@@ -1,0 +1,25 @@
+{
+  "main": "./index.html",
+  "logo": "./logo.png",
+  "preload": "./preload.js",
+  "development": {
+    "main": "http://127.0.0.1:3000"
+  },
+  "features": [
+    {
+      "code": "vpn-mobileconfig",
+      "explain": "生成不同用户的 .mobileconfig",
+      "cmds": [
+        "vpn配置生成",
+        {
+          "type": "files",
+          "label": ".mobileconfig 配置生成",
+          "fileType": "file",
+          "match": "/\\.mobileconfig$/i",
+          "minLength": 1,
+          "maxLength": 1
+        }
+      ]
+    }
+  ]
+}
