@@ -7,6 +7,11 @@
   },
   "features": [
     {
+      "code": "home",
+      "explain": "主页",
+      "cmds": ["运维配置小工具"]
+    },
+    {
       "code": "vpn-mobileconfig",
       "explain": "生成不同用户的 .mobileconfig",
       "cmds": [

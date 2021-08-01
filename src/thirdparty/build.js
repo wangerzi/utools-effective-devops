@@ -3,7 +3,7 @@
  */
 
 import {fromByteArray} from 'base64-js'
-import xmlbuilder from 'xmlbuilder'
+import {create as xmlBuilderCreate} from 'xmlbuilder2'
 
 /**
  * Module exports.
@@ -64,7 +64,7 @@ export function build (obj, opts) {
     sysid: 'http://www.apple.com/DTDs/PropertyList-1.0.dtd'
   };
 
-  var doc = xmlbuilder.create('plist');
+  var doc = xmlBuilderCreate().ele('plist');
 
   doc.dec(XMLHDR.version, XMLHDR.encoding, XMLHDR.standalone);
   doc.dtd(XMLDTD.pubid, XMLDTD.sysid);
