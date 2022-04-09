@@ -12,6 +12,35 @@
       "cmds": ["运维配置小工具"]
     },
     {
+      "code": "config-refresh",
+      "explain": "刷新配置",
+      "cmds": ["刷新配置"]
+    },
+    {
+      "code": "config-refresh-auto-dev",
+      "explain": "自动刷新测试配置",
+      "cmds": ["自动刷新测试配置"]
+    },
+    {
+      "code": "config-refresh-auto-prod",
+      "explain": "自动刷新生产配置",
+      "cmds": ["自动刷新生产配置"]
+    },
+    {
+      "code": "upload-ipfs",
+      "explain": "上传文件至 nft.storage",
+      "cmds": [
+        "IPFS 上传至 nft.storage",
+        {
+          "type": "files",
+          "label": "IPFS 上传至 nft.storage",
+          "fileType": "file",
+          "minLength": 1,
+          "maxLength": 1
+        }
+      ]
+    },
+    {
       "code": "vpn-mobileconfig",
       "explain": "生成不同用户的 .mobileconfig",
       "cmds": [

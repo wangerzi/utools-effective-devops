@@ -20,3 +20,10 @@ window.saveTmpFile = function (fileName, content) {
 
   return savePath
 }
+
+window.setAppConfig = function(config) {
+  utools.dbStorage.setItem('app-config', config)
+}
+window.getAppConfig = function() {
+  utools.dbStorage.setItem('app-config')
+}
